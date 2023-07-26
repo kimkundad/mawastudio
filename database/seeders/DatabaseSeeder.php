@@ -58,6 +58,32 @@ class DatabaseSeeder extends Seeder
                 'user_id' => 4
             ],
         ]);
+        DB::table('seast_groups')->insert([
+            [
+                'group_name' => 'A',
+                'event_id' => 1,
+                'g_status' => 1,
+                'amount' => 0.00
+            ],
+            [
+                'group_name' => 'B',
+                'event_id' => 1,
+                'g_status' => 1,
+                'amount' => 0.00
+            ],
+            [
+                'group_name' => 'C',
+                'event_id' => 1,
+                'g_status' => 1,
+                'amount' => 0.00
+            ],
+            [
+                'group_name' => 'D',
+                'event_id' => 1,
+                'g_status' => 1,
+                'amount' => 0.00
+            ],
+        ]);
         DB::table('users')->insert([
             [
               'name' => 'superadmin',
