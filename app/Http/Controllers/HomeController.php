@@ -41,7 +41,7 @@ class HomeController extends Controller
     }
 
     public function create_roomsA(){
-      for($i = 1; $i <= 250; $i++){
+      for($i = 1; $i <= 125; $i++){
         seast::create([
           'event_id' => 1,
           'group_id' => 1,
@@ -57,7 +57,7 @@ class HomeController extends Controller
     }
 
     public function create_roomsB(){
-      for($i = 1; $i <= 250; $i++){
+      for($i = 1; $i <= 125; $i++){
         seast::create([
           'event_id' => 1,
           'group_id' => 2,
@@ -73,7 +73,7 @@ class HomeController extends Controller
     }
 
     public function create_roomsC(){
-      for($i = 1; $i <= 250; $i++){
+      for($i = 1; $i <= 125; $i++){
         seast::create([
           'event_id' => 1,
           'group_id' => 3,
