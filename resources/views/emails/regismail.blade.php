@@ -23,6 +23,7 @@
 			<!--begin::Wrapper-->
 			<div class="d-flex flex-column flex-column-fluid">
 				
+				
 				<!--begin::Body-->
 				<div class="scroll-y flex-column-fluid px-10 py-10" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header_nav" data-kt-scroll-offset="5px" data-kt-scroll-save-state="true" style="background-color:#D5D9E2; --kt-scrollbar-color: #d9d0cc; --kt-scrollbar-hover-color: #d9d0cc">
 					<!--begin::Email template-->
