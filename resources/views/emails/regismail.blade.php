@@ -65,7 +65,7 @@
 												</div>
 												<!--end:Text-->
 												<!--begin:Action-->
-												<a href='http://localhost:3000/paymentNoti?ordercon={{$details['order_id']}}' target="_blank" 
+												<a href='https://mawastudiothailand.com/plengneepeehainong/paymentNoti?ordercon={{$details['order_id']}}' target="_blank" 
                                                 style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500;">
                                                     แจ้งการชำระเงิน
                                                 </a>
