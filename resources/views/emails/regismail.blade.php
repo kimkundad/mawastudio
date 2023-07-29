@@ -39,13 +39,13 @@
 												<!--begin:Logo-->
 												<div style="margin-bottom: 10px">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/logo_v1.png') }}" style="height: 45px" />
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
 													</a>
 												</div>
 												<!--end:Logo-->
 												<!--begin:Media-->
 												<div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('admin/assets/media/email/icon-positive-vote-1.svg') }}" />
+													<img alt="Logo" src="{{ url('admin/assets/media/email/icon-positive-vote-1.svg') }}" height="170" />
 												</div>
 												<!--end:Media-->
 												<!--begin:Text-->
@@ -57,7 +57,13 @@
 												</div>
 
                                                 <div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/S__5562374.jpg') }}" style="max-height: 400px; width: auto" />
+													<img alt="Logo" src="{{ url('img/S__51208212.jpg') }}" style="max-height: 400px; width: auto" />
+												</div>
+												<div className='d-flex justify-content-center flex-column'>
+													<p className='p-acc'>Account Name: HOUSE OF BLESSING FOUNDATION</p>
+													<p className='p-acc'>Account No.: 2542170358</p>
+													<p className='p-acc'>TMB Thanachart Bank Public Company Limited</p>
+													<p className='p-acc'>Branch: SI WARA TOWN IN TOWN BRANCH</p>
 												</div>
 												<!--end:Text-->
 												<!--begin:Action-->
@@ -84,10 +90,10 @@
 														<!--begin:Item-->
 														<div style="display:flex; justify-content: space-between; color:#7E8299; font-size: 14px; font-weight:500; margin-bottom:8px">
 															<!--begin:Description-->
-															<div style="font-family:Arial,Helvetica,sans-serif">Business - Monthly invoice</div>
+															<div style="font-family:Arial,Helvetica,sans-serif">ที่นั่ง </div>
 															<!--end:Description-->
 															<!--begin:Total-->
-															<div style="font-family:Arial,Helvetica,sans-serif">฿{{$details['price']}}</div>
+															<div style="font-family:Arial,Helvetica,sans-serif"> ฿{{$details['seatDetails']}}</div>
 															<!--end:Total-->
 														</div>
 														<!--end:Item-->
@@ -98,10 +104,10 @@
 														<!--begin:Item-->
 														<div style="display:flex; justify-content: space-between; color:#7E8299; font-size: 14px; font-weight:500">
 															<!--begin:Description-->
-															<div style="font-family:Arial,Helvetica,sans-serif">Total paid</div>
+															<div style="font-family:Arial,Helvetica,sans-serif">ยอดที่ต้องชำระ</div>
 															<!--end:Description-->
 															<!--begin:Total-->
-															<div style="color:#50cd89; font-weight:700; font-family:Arial,Helvetica,sans-serif">฿{{$details['price']}}</div>
+															<div style="color:#50cd89; font-weight:700; font-family:Arial,Helvetica,sans-serif"> ฿{{$details['price']}}</div>
 															<!--end:Total-->
 														</div>
 														<!--end:Item-->
@@ -123,7 +129,7 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" />
+														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" height="40" />
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">1</span>
 													</div>
 													<!--end::Media-->
@@ -150,7 +156,7 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" />
+														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" height="40"/>
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">2</span>
 													</div>
 													<!--end::Media-->
@@ -179,7 +185,7 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" />
+														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.svg') }}" height="40"/>
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">3</span>
 													</div>
 													<!--end::Media-->
@@ -219,16 +225,16 @@
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" height="24" />
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" height="24"/>
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" height="24"/>
 											</a>
 											<a href="#">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" height="24"/>
 											</a>
 										</td>
 									</tr>

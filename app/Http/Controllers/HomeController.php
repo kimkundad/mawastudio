@@ -326,6 +326,7 @@ class HomeController extends Controller
         'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
         'name' => $request->user['userName'],
         'price' => $request->user['usetotal'],
+        'seatDetails' => $request->user['seatDetails'],
         'order_id' => $randomString,
     ];
       $myemail = 'kim.kundad@gmail.com';

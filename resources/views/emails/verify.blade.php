@@ -35,7 +35,7 @@
 												<!--begin:Logo-->
 												<div style="margin:-10px 60px 20px 60px; text-align:center;">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/logo_v1.png') }}" style="height: 45px" />
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
 													</a>
 												</div>
 												<!--end:Logo-->
@@ -55,7 +55,7 @@
 													<!--begin:Item-->
 													<div style="width:220px; margin:18px 20px">
 														<!--begin:Media-->
-                                                        {!! QrCode::size(220)->generate(url('admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i])) !!}
+                                                        {!!$message->embedData(QrCode::size(220)->generate(url('admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i]))) !!}
 														<!--end:Media-->
 														<!--begin:Text-->
 														<a href="#" style="color:#181C32; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
@@ -94,16 +94,16 @@
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" height="24" />
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" height="24"/>
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" height="24"/>
 											</a>
 											<a href="#">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" height="24"/>
 											</a>
 										</td>
 									</tr>
