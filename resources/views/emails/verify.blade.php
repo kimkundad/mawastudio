@@ -93,18 +93,11 @@
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('img/email/icon-linkedin.svg') }}" style="height:24px" />
-											</a>
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('img/email/icon-dribbble.svg') }}" style="height:24px"/>
-											</a>
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('img/email/icon-facebook.svg') }}" style="height:24px"/>
-											</a>
-											<a href="#">
-												<img alt="Logo" src="{{ url('img/email/icon-twitter.svg') }}" style="height:24px"/>
-											</a>
+												<div style="margin-bottom: 10px">
+													<a href="#" rel="noopener" target="_blank">
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+													</a>
+												</div>
 										</td>
 									</tr>
 									<tr>

@@ -44,9 +44,7 @@
 												</div>
 												<!--end:Logo-->
 												<!--begin:Media-->
-												<div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('admin/assets/media/email/icon-positive-vote-1.svg') }}" height="170" />
-												</div>
+												
 												<!--end:Media-->
 												<!--begin:Text-->
 												<div style="font-size: 14px; font-weight: 500; margin-bottom: 27px; font-family:Arial,Helvetica,sans-serif;">
@@ -224,18 +222,11 @@
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" height="24" />
-											</a>
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" height="24"/>
-											</a>
-											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" height="24"/>
-											</a>
-											<a href="#">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" height="24"/>
-											</a>
+												<div style="margin-bottom: 10px">
+													<a href="#" rel="noopener" target="_blank">
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+													</a>
+												</div>
 										</td>
 									</tr>
 									<tr>
