@@ -170,14 +170,15 @@ class HomeController extends Controller
 
                 $image_thumbnail_url = url('images/mawastudio/slip2/'.$new->image_order_small);  // max size 240x240px JPEG
                 $image_fullsize_url = url('images/mawastudio/slip/'.$new->image_order); //max size 1024x1024px JPEG
-                $imageFile = 'copy/240.jpg';
+                $imageFile = new CURLFILE('copy/240.jpg');
                 $sticker_package_id = '';  // Package ID sticker
                 $sticker_id = '';    // ID sticker
 
                 $message_data = array(
                 'imageThumbnail' => $image_thumbnail_url,
-                'imageFile' => $image_fullsize_url,
+                'imageFullsize' => $image_fullsize_url,
                 'message' => $message,
+                'imageFile' => $imageFile,
                 'stickerPackageId' => $sticker_package_id,
                 'stickerId' => $sticker_id
                 );
