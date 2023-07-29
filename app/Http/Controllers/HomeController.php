@@ -173,18 +173,13 @@ class HomeController extends Controller
                 $imageFile = 'copy/240.jpg';
                 $sticker_package_id = '';  // Package ID sticker
                 $sticker_id = '';    // ID sticker
-
-                if (function_exists('curl_file_create')) {
-                  $cFile = curl_file_create($imageFile );
-                  } else {
-                  $cFile = '@'.realpath($imageFile );
-                  }
+                
 
                 $message_data = array(
                 'imageThumbnail' => $image_thumbnail_url,
                 'imageFullsize' => $image_fullsize_url,
                 'message' => $message,
-                'imageFile' => $cFile,
+                'imageFile' => $image_fullsize_url,
                 'stickerPackageId' => $sticker_package_id,
                 'stickerId' => $sticker_id
                 );
