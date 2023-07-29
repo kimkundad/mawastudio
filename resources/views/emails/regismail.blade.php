@@ -127,7 +127,6 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.png') }}" height="40" />
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">1</span>
 													</div>
 													<!--end::Media-->
@@ -154,7 +153,6 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.png') }}" height="40"/>
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">2</span>
 													</div>
 													<!--end::Media-->
@@ -183,7 +181,6 @@
 												<div style="display:flex">
 													<!--begin::Media-->
 													<div style="display: flex; justify-content: center; align-items: center; width:40px; height:40px; margin-right:13px">
-														<img alt="Logo" src="{{ url('admin/assets/media/email/icon-polygon.png') }}" height="40"/>
 														<span style="position: absolute; color:#50CD89; font-size: 16px; font-weight: 600;">3</span>
 													</div>
 													<!--end::Media-->
