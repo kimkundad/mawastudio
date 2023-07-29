@@ -286,6 +286,15 @@ class HomeController extends Controller
         ]
       );
 
+      $details = [
+        'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
+        'name' => $request->user['userName'],
+        'price' => $request->user['usetotal'],
+        'seatDetails' => rtrim(implode(',', $request->user['seatDetails']), ','),
+        'order_id' => $randomString,
+    ];
+      \Mail::to($request->user['email'])->send(new \App\Mail\HelloEmail($details));
+
       $message = "มีผู้งทะเบียนใหม่ #: ". $randomString ." ชื่อผู้ : ".$request->user['userName'].", ".$request->user['email'].", ".$request->user['phone'].", ที่นั่ง :".rtrim(implode(',', $request->user['seatDetails']), ',');
 
     }else{
@@ -316,13 +325,6 @@ class HomeController extends Controller
         ]
       );
 
-      $message = "มีผู้งทะเบียนใหม่ #: ". $randomString ." ชื่อผู้ : ".$request->user['userName'].", ".$request->user['email'].", ".$request->user['phone'].", ที่นั่ง :".$request->user['seatDetails'];
-
-    }
-       
-
-      
-
       $details = [
         'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
         'name' => $request->user['userName'],
@@ -330,9 +332,16 @@ class HomeController extends Controller
         'seatDetails' => $request->user['seatDetails'],
         'order_id' => $randomString,
     ];
-      $myemail = 'kim.kundad@gmail.com';
-
       \Mail::to($request->user['email'])->send(new \App\Mail\HelloEmail($details));
+
+      $message = "มีผู้งทะเบียนใหม่ #: ". $randomString ." ชื่อผู้ : ".$request->user['userName'].", ".$request->user['email'].", ".$request->user['phone'].", ที่นั่ง :".$request->user['seatDetails'];
+
+    }
+       
+
+      
+
+      
 
       
         $lineapi = env('line_token');
