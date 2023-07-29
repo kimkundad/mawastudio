@@ -94,16 +94,16 @@
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" height="24" />
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-linkedin.svg') }}" style="height:24px" />
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" height="24"/>
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-dribbble.svg') }}" style="height:24px"/>
 											</a>
 											<a href="#" style="margin-right:10px">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" height="24"/>
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-facebook.svg') }}" style="height:24px"/>
 											</a>
 											<a href="#">
-												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" height="24"/>
+												<img alt="Logo" src="{{ url('admin/assets/media/email/icon-twitter.svg') }}" style="height:24px"/>
 											</a>
 										</td>
 									</tr>
