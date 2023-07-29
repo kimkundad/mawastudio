@@ -176,9 +176,8 @@ class HomeController extends Controller
 
                 $message_data = array(
                 'imageThumbnail' => $image_thumbnail_url,
-                'imageFullsize' => $image_fullsize_url,
+                'imageFile' => $image_fullsize_url,
                 'message' => $message,
-                'imageFile' => $imageFile,
                 'stickerPackageId' => $sticker_package_id,
                 'stickerId' => $sticker_id
                 );
