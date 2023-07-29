@@ -1,8 +1,8 @@
 @extends('admin.layouts.template')
 
 @section('title')
-    <title>วงษ์พาณิชย์รีไซเคิล ระยอง จำกัด</title>
-    <meta name="description" content=" รายละเอียด วงษ์พาณิชย์รีไซเคิล ระยอง จำกัด">
+<title>mawastudiothailand</title>
+    <meta name="description" content="mawastudiothailand">
 @stop
 @section('stylesheet')
 
