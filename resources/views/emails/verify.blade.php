@@ -55,7 +55,7 @@
 													<!--begin:Item-->
 													<div style="width:220px; margin:18px 20px">
 														<!--begin:Media-->
-														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate(url('admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i])), 'QrCode.png', 'image/png')!!}">
+														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i].'), 'QrCode.png', 'image/png')!!}">
 														<!--end:Media-->
 														<!--begin:Text-->
 														<a href="#" style="color:#181C32; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
