@@ -48,6 +48,10 @@ Route::group(['middleware' => ['UserRole:superadmin|admin']], function() {
     Route::post('/api/api_post_status_events', [App\Http\Controllers\EventsController::class, 'api_post_status_events']);
     Route::get('api/del_events/{id}', [App\Http\Controllers\EventsController::class, 'del_events']);
 
+	Route::resource('/admin/order', OrderController::class);
+    Route::post('/api/api_post_status_order', [App\Http\Controllers\OrderController::class, 'api_post_status_order']);
+    Route::get('api/del_order/{id}', [App\Http\Controllers\OrderController::class, 'del_order']);
+
 });
 
 Route::get('/images/{file}', function ($file) {
