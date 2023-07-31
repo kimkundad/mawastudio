@@ -196,6 +196,15 @@ class OrderController extends Controller
           );
         }
 
+        if(isset($order->image_order)){
+            $storage = Storage::disk('do_spaces');
+            $storage->delete('mawastudio/slip/' . $objs->image_order, 'public');
+        }
+        if(isset($order->image_order_small)){
+            $storage = Storage::disk('do_spaces');
+            $storage->delete('mawastudio/slip2/' . $objs->image_order_small, 'public');
+        }
+
         $obj = order::find($id);
         $obj->delete();
     
