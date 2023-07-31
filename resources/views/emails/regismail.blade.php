@@ -163,7 +163,7 @@
 									<tr >
 										<td align="center" valign="center" style="text-align:center; padding:0 60px 35px 60px">
 											<h3 style="text-align:center; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">หมายเลขคำสั่งจอง : {{$details['order_id']}}</h3>
-											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
+											<table width="460" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
 												
 													<tr>
@@ -194,7 +194,7 @@
 									<tr style="">
 										<td align="center" valign="center" style="text-align:center; padding:0 60px 35px 60px">
 											<h3 style="text-align:center; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">รายละเอียดผู้สั่งจอง</h3>
-											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
+											<table width="460" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
 												
 													<tr>
@@ -239,6 +239,7 @@
 													</tr>
 													<tr>
 														<td colspan="2" height="20" style="font-size:1px;line-height:1px" width="100%">
+															<hr>
 														</td>
 													</tr>
 												</tbody>
@@ -247,7 +248,7 @@
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
-											<hr>
+											
 											<img src="{{ url('img/154930.png') }}" style="width:90%; margin-bottom: 20px; margin-top: 20px;">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
 											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ <br> วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
