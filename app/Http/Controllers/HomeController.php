@@ -256,7 +256,7 @@ class HomeController extends Controller
 
       $new = order::where('order_id', $request->orderNo)->first();
 
-      $message = "ข้อความแจ้งการชำระเงิน # : ". $request->orderN ." ชื่อผู้ติดต่อ : ".$objs->username.", ".$objs->phone.", ".$objs->email.", ยอดชำระ : ".$objs->price;
+      $message = "ข้อความแจ้งการชำระเงิน # : ". $request->orderN ." ชื่อผู้ติดต่อ : ".$objs->username.", ".$objs->phone.", ".$objs->email.", ยอดชำระ : ".$objs->price."ที่นั่ง : ".$objs->seatDetails;
       $lineapi = env('line_token');
 
                 $image_thumbnail_url = url('images/mawastudio/slip2/'.$new->image_order_small);  // max size 240x240px JPEG
