@@ -28,6 +28,7 @@ Route::group([
     Route::post('/addOrder', [App\Http\Controllers\HomeController::class, 'addOrder']);
     Route::get('/getDataOrder/{id}', [App\Http\Controllers\HomeController::class, 'getDataOrder']);
     Route::post('/addPayment', [App\Http\Controllers\HomeController::class, 'addPayment']);
+    Route::post('/addDonate', [App\Http\Controllers\HomeController::class, 'addDonate']);
 
 });
 

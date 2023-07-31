@@ -8,6 +8,7 @@ use App\Models\evnet;
 use App\Models\seast_group;
 use App\Models\seast;
 use App\Models\order;
+use App\Models\donate;
 use Intervention\Image\ImageManagerStatic as Image;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
@@ -109,6 +110,74 @@ class HomeController extends Controller
       $evnet = evnet::where('id', $id)->first();
 
       return response()->json([ 'data' => $evnet ], 200);
+
+    }
+
+    public function addDonate(Request $request){
+
+      $this->validate($request, [
+        'file' => 'required|image'
+    ]);
+
+
+    $image = $request->file('file');
+      $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+
+      $img = Image::make($image->getRealPath());
+          $img->resize(500, 500, function ($constraint) {
+          $constraint->aspectRatio();
+        });
+        $img->stream();
+        Storage::disk('do_spaces')->put('mawastudio/donate/'.$image->hashName(), $img, 'public');
+
+        $package = new donate();
+        $package->user_name = $request->user['username'];
+        $package->money = $request->user['money'];
+        $package->slip = $image->hashName();
+        $package->save();
+
+        $message = "ข้อความแจ้งการร่วมบริจาค : ชื่อผู้บริจาค : ".$request->username.", ยอด : ".$request->money;
+      $lineapi = env('line_token');
+
+                $image_thumbnail_url = url('images/mawastudio/donate/'.$package->slip);  // max size 240x240px JPEG
+                $image_fullsize_url = url('images/mawastudio/donate/'.$package->slip); //max size 1024x1024px JPEG
+                $imageFile = 'copy/240.jpg';
+                $sticker_package_id = '';  // Package ID sticker
+                $sticker_id = '';    // ID sticker
+                
+
+                $message_data = array(
+                'imageThumbnail' => $image_thumbnail_url,
+                'imageFullsize' => $image_fullsize_url,
+                'message' => $message,
+                'imageFile' => $image_fullsize_url,
+                'stickerPackageId' => $sticker_package_id,
+                'stickerId' => $sticker_id
+                );
+
+                $headers = array('Method: POST', 'Content-type: multipart/form-data', 'Authorization: Bearer '.$lineapi );
+                $mms =  trim($message);
+                $chOne = curl_init();
+                curl_setopt($chOne, CURLOPT_URL, "https://notify-api.line.me/api/notify");
+                curl_setopt($chOne, CURLOPT_SSL_VERIFYHOST, 0);
+                curl_setopt($chOne, CURLOPT_SSL_VERIFYPEER, 0);
+                curl_setopt($chOne, CURLOPT_POST, 1);
+                curl_setopt($chOne, CURLOPT_POSTFIELDS, $message_data);
+                curl_setopt($chOne, CURLOPT_FOLLOWLOCATION, 1);
+                curl_setopt($chOne, CURLOPT_HTTPHEADER, $headers);
+                curl_setopt($chOne, CURLOPT_RETURNTRANSFER, 1);
+                $result = curl_exec($chOne);
+                if(curl_error($chOne)){
+                echo 'error:' . curl_error($chOne);
+                }else{
+                $result_ = json_decode($result, true);
+                echo "status : ".$result_['status'];
+                echo "message : ". $result_['message'];
+                }
+                curl_close($chOne);
+
+        return response()->json([ 'data' => 'success', 'donate' => $package ], 200);
+
 
     }
 
