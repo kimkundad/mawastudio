@@ -59,6 +59,7 @@ class MyUserController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
     public function store(Request $request)
     {
         //
@@ -78,7 +79,6 @@ class MyUserController extends Controller
             'code_user' => $request['password'],
             'provider' => 'email',
             'email_verified_at' => date('Y-m-d H:i:s'),
-            'is_admin' => 0,
             'password' => Hash::make($request['password']),
         ]);
 

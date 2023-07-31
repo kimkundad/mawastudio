@@ -50,7 +50,7 @@
 												<!--begin:Text-->
                                                 <div style="font-size: 14px; text-align:center; font-weight: 500; margin:0 60px 36px 60px; font-family:Arial,Helvetica,sans-serif">
 													<p style="margin-bottom:2px;font-weight:700; font-size: 24px;  color:#707070; line-height:1.6">
-                                                    <b>มูลนิธิบ้านพระพร ขอขอบคุณ คูณ {{$details['name']}}
+                                                    <b>มูลนิธิบ้านพระพร <br>ขอขอบคุณ คูณ {{$details['name']}}
                                                     </p>
 													<p style="font-weight:700; font-size: 18px;  color:#707070;">
                                                         ที่ร่วมเป็นส่วนหนึ่งในการช่วยเหลือ ผู้ต้องขัง ผู้พ้นโทษ เยาวชนและเด็ก ๆ ด้อยโอกาสทุกคน เพื่อให้เข้าถึงชีวิตแห่งการเปลี่ยนแปลงที่ดีขึ้น
