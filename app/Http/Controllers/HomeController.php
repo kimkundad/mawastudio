@@ -131,8 +131,8 @@ class HomeController extends Controller
         Storage::disk('do_spaces')->put('mawastudio/donate/'.$image->hashName(), $img, 'public');
 
         $package = new donate();
-        $package->user_name = $request->user['username'];
-        $package->money = $request->user['money'];
+        $package->user_name = $request['username'];
+        $package->money = $request['money'];
         $package->slip = $image->hashName();
         $package->save();
 
