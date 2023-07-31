@@ -160,8 +160,8 @@
 											<!--end::Wrapper-->
 										</td>
 									</tr>
-									<tr style="margin:0 60px 35px 60px">
-										<td align="center" valign="center" style="text-align:center; padding: 10px">
+									<tr >
+										<td align="center" valign="center" style="text-align:center; padding:0 60px 35px 60px">
 											<h3 style="text-align:center; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">หมายเลขคำสั่งจอง : {{$details['order_id']}}</h3>
 											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
@@ -191,8 +191,8 @@
 											</table>
 										</td>
 									</tr>
-									<tr style="margin:0 60px 35px 60px">
-										<td align="center" valign="center" style="text-align:center; padding: 10px">
+									<tr style="">
+										<td align="center" valign="center" style="text-align:center; padding:0 60px 35px 60px">
 											<h3 style="text-align:center; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">รายละเอียดผู้สั่งจอง</h3>
 											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
@@ -239,7 +239,6 @@
 													</tr>
 													<tr>
 														<td colspan="2" height="20" style="font-size:1px;line-height:1px" width="100%">
-															<hr>
 														</td>
 													</tr>
 												</tbody>
