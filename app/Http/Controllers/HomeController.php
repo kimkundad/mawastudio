@@ -141,7 +141,11 @@ class HomeController extends Controller
           'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
           'name' => $request['username'],
       ];
-        \Mail::to($request->user['email'])->send(new \App\Mail\DonateEmail($details));
+
+      if($request['email']){
+        \Mail::to($request['email'])->send(new \App\Mail\DonateEmail($details));
+      }
+        
 
         $message = "ข้อความแจ้งการร่วมบริจาค : ชื่อผู้บริจาค : ".$request->username.", ยอด : ".$request->money;
       $lineapi = env('line_token');
