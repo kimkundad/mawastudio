@@ -175,8 +175,32 @@ class OrderController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function del_order($id)
     {
         //
+        $order = order::find($id);
+
+        $pieces = explode(",", $order->my_seasts);
+
+        for($i = 0; $i < count($pieces); $i++){
+
+          DB::table('seasts')
+          ->where('seats_name', $pieces[$i])
+          ->update(
+            [
+              'user_id' => 0,
+              'status' => 0,
+              'status_order' => 0,
+              'status_checkin' => 0
+            ]
+          );
+        }
+
+        $obj = order::find($id);
+        $obj->delete();
+    
+        return redirect(url('admin/order/'))->with('del_success','คุณทำการลบอสังหา สำเร็จ');
+
+
     }
 }
