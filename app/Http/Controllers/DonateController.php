@@ -26,7 +26,7 @@ class DonateController extends Controller
             ->paginate(15);
 
             $objs->setPath('');
-            dd($objs);
+          
         $data['objs'] = $objs;
         $data['sum'] = $sum;
         return view('admin.donate.index', compact('objs', 'count', 'sum'));
