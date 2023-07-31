@@ -412,12 +412,7 @@ class HomeController extends Controller
       $message = "มีผู้งทะเบียนใหม่ #: ". $randomString ." ชื่อผู้ : ".$request->user['userName'].", ".$request->user['email'].", ".$request->user['phone'].", ที่นั่ง :".$request->user['seatDetails'];
 
     }
-       
-
-      
-
-      
-
+    
       
         $lineapi = env('line_token');
 
