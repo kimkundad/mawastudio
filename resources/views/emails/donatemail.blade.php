@@ -41,48 +41,20 @@
 												<!--end:Logo-->
 												<!--begin:Text-->
 												<div style="font-size: 14px; text-align:center; font-weight: 500; margin:0 60px 36px 60px; font-family:Arial,Helvetica,sans-serif">
-													<p style="color:#707070; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">สั่งจองตั๋วสำเร็จ</p>
-													<p style="margin-bottom:2px;font-weight:700; font-size: 20px;  color:#707070; line-height:1.6">
-                                                    <b>ขอขอบคุณ {{$details['name']}}
-                                                    </p>
-													<p style="font-weight:700; font-size: 16px;  color:#707070;">
-													ที่ให้ความสนใจเข้าร่วมคอนเสิร์ตการกุศล เพื่อหารายได้ช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย
-													</p>
+													<p style="color:#707070; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">บริจาคสำเร็จ</p>
 												</div>
 												<div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/163714.png') }}" style="width: 100%;" />
+													<img alt="Logo" src="{{ url('img/165751.png') }}" style="width: 100%;" />
 												</div>
 												<!--end:Text-->
-												<!--begin:Items-->
-												<div style="text-align:center; justify-content:center; flex-wrap: wrap; margin:0 40px 42px 40px">
-
-													@if($details['seasts'])
-													@for ($i = 0; $i < count($details['seasts']); $i++)
-													<!--begin:Item-->
-													<div style=" margin:18px 20px; text-align:center;">
-														<!--begin:Media-->
-														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i]), 'QrCode.png', 'image/png')!!}">
-														<!--end:Media-->
-														<!--begin:Text-->
-														<a href="#" style="color:#707070; text-align:center; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
-														<!--begin:Text-->
-													</div>
-													<!--end:Item-->
-													@endfor
-													@endif
-													
-													
-												</div>
-												<!--end:Items-->
 												<!--begin:Text-->
-												<div style="font-size:14px; text-align:center; font-weight:500; margin:0 60px 33px 60px; font-family:Arial,Helvetica,sans-serif">
-													<hr>
-														<div style="text-align:center;">
-															<img alt="Logo" src="{{ url('img/map.png') }}" style="width: 100%;" />
-															<br>
-															<p>สถานที่จัดงาน <a target="_blank" href="https://goo.gl/maps/7egLm1p4bNn9r9DK7">https://goo.gl/maps/7egLm1p4bNn9r9DK7</a></p>
-														</div>
-													<hr>
+                                                <div style="font-size: 14px; text-align:center; font-weight: 500; margin:0 60px 36px 60px; font-family:Arial,Helvetica,sans-serif">
+													<p style="margin-bottom:2px;font-weight:700; font-size: 24px;  color:#707070; line-height:1.6">
+                                                    <b>มูลนิธิบ้านพระพร ขอขอบคุณ คูณ {{$details['name']}}
+                                                    </p>
+													<p style="font-weight:700; font-size: 18px;  color:#707070;">
+                                                        ที่ร่วมเป็นส่วนหนึ่งในการช่วยเหลือ ผู้ต้องขัง ผู้พ้นโทษ เยาวชนและเด็ก ๆ ด้อยโอกาสทุกคน เพื่อให้เข้าถึงชีวิตแห่งการเปลี่ยนแปลงที่ดีขึ้น
+													</p>
 												</div>
 												<!--end:Text-->
 											</div>

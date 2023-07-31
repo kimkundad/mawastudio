@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class HelloEmail extends Mailable
+class DonateEmail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -26,14 +26,9 @@ class HelloEmail extends Mailable
         $this->details = $details;
     }
 
-
     public function build()
     {
         return $this->subject('ข้อความจาก MawaStudioThailand')
-                    ->view('emails.regismail');
+                    ->view('emails.donatemail');
     }
-
-    
 }
-
-
