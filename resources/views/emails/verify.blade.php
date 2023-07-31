@@ -78,7 +78,7 @@
 												<div style="font-size:14px; text-align:center; font-weight:500; margin:0 60px 33px 60px; font-family:Arial,Helvetica,sans-serif">
 													<hr>
 														<div style="text-align:center;">
-															<img alt="Logo" src="{{ url('img/map-02.jpg') }}" style="width: 100%;" />
+															<img alt="Logo" src="{{ url('img/map.png') }}" style="width: 100%;" />
 															<br>
 															<p>สถานที่จัดงาน <a target="_blank" htrf="https://goo.gl/maps/7egLm1p4bNn9r9DK7">https://goo.gl/maps/7egLm1p4bNn9r9DK7</a></p>
 														</div>
