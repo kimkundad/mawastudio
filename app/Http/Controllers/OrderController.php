@@ -19,6 +19,7 @@ class OrderController extends Controller
     public function index()
     {
         //
+        $sum = DB::table('orders')->where('status', 2)->sum('price');
         $count = DB::table('orders')->count();
         $objs = DB::table('orders')
             ->orderby('id', 'desc')
@@ -27,7 +28,7 @@ class OrderController extends Controller
             $objs->setPath('');
         $data['objs'] = $objs;
 
-        return view('admin.order.index', compact('objs', 'count'));
+        return view('admin.order.index', compact('objs', 'count', 'sum'));
     }
 
     /**
