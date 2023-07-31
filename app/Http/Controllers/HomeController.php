@@ -32,7 +32,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+      return redirect(url('admin/dashboard'));
     }
 
     public function email(){
