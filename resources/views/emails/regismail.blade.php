@@ -55,10 +55,10 @@
 												</div>
 
                                                 <div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/Mask Group 14.png') }}" style="max-height: 400px; width: auto" />
+													<img alt="Logo" src="{{ url('img/Mask_Group_14.png') }}" style="max-height: 400px; width: auto" />
 												</div>
 												<div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/Group 93.png') }}" style="max-height: 400px; width: auto" />
+													<img alt="Logo" src="{{ url('img/Group_93.png') }}" style="max-height: 400px; width: auto" />
 												</div>
 												
 												<!--end:Text-->
