@@ -105,6 +105,17 @@ class HomeController extends Controller
       ]);
     }
 
+    public function delete_roomsD(){
+      
+      DB::table('seasts')
+        ->where('group_id', 4)
+        ->delete();
+
+      return response()->json([
+        'data' => 'success'
+      ]);
+    }
+
     public function get_event($id){
 
       $evnet = evnet::where('id', $id)->first();
