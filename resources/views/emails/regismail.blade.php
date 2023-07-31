@@ -23,7 +23,6 @@
 			<!--begin::Wrapper-->
 			<div class="d-flex flex-column flex-column-fluid">
 				
-				
 				<!--begin::Body-->
 				<div class="scroll-y flex-column-fluid px-10 py-10" data-kt-scroll="true" data-kt-scroll-activate="true" data-kt-scroll-height="auto" data-kt-scroll-dependencies="#kt_app_header_nav" data-kt-scroll-offset="5px" data-kt-scroll-save-state="true" style="background-color:#D5D9E2; --kt-scrollbar-color: #d9d0cc; --kt-scrollbar-hover-color: #d9d0cc">
 					<!--begin::Email template-->
@@ -39,19 +38,19 @@
 												<!--begin:Logo-->
 												<div style="margin-bottom: 10px">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 55px" />
 													</a>
 												</div>
 												<!--end:Logo-->
-												<!--begin:Media-->
-												
-												<!--end:Media-->
 												<!--begin:Text-->
 												<div style="font-size: 14px; font-weight: 500; margin-bottom: 27px; font-family:Arial,Helvetica,sans-serif;">
 													<p style="margin-bottom:9px; color:#181C32; font-size: 20px; font-weight:700">สวัสดี {{$details['name']}}</p>
-													<p style="margin-bottom:2px; color:#7E8299">เราขอขอบคุณที่ให้ความสนใจเข้าร่วมกิจกรรม</p>
-													<p style="margin-bottom:2px; color:#7E8299">สำหรับผู้ที่สมัครและได้รับอีเมลยืนยันจากเรา</p>
-													<p style="margin-bottom:2px; color:#7E8299">คุณสามารถชำระค่า.......บลาๆๆ</p>
+													<p style="margin-bottom:9px; color:#7E8299; font-size: 18px; font-weight:700">ขอขอบคุณ</p>
+													<p style="margin-bottom:2px; color:#7E8299">ที่ให้ความสนใจเข้าร่วมคอนเสิร์ตการกุศล <br> เพื่อหารายได้ช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย</p>
+												</div>
+
+												<div style="margin-bottom: 15px">
+													<img alt="Logo" src="{{ url('img/160428.png') }}" style="max-height: 400px; width: auto" />
 												</div>
 
                                                 <div style="margin-bottom: 15px">
@@ -64,7 +63,7 @@
 												<!--end:Text-->
 												<!--begin:Action-->
 												<a href='https://mawastudiothailand.com/plengneepeehainong/paymentNoti?ordercon={{$details['order_id']}}' target="_blank" 
-                                                style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500;">
+                                                style="background-color:#cf4339; border-radius:6px;display:inline-block; padding:15px 22px; color: #FFFFFF; font-size: 16px; font-weight:500;">
                                                     แจ้งการชำระเงิน
                                                 </a>
 												<!--begin:Action-->
@@ -72,50 +71,7 @@
 											<!--end:Email content-->
 										</td>
 									</tr>
-                                    <tr>
-										<td align="center" valign="center" style="text-align:center; padding-bottom: 10px">
-											<!--begin:Email content-->
-											<div style="text-align:center; margin:0 60px 34px 60px">
-												<!--begin:Order-->
-												<div style="margin-bottom: 15px">
-													<!--begin:Title-->
-													<h3 style="text-align:left; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">สรุปการสั่งจอง</h3>
-													<!--end:Title-->
-													<!--begin:Items-->
-													<div style="padding-bottom:9px">
-														<!--begin:Item-->
-														<div style="display:flex; justify-content: space-between; color:#7E8299; font-size: 14px; font-weight:500; margin-bottom:8px">
-															<!--begin:Description-->
-															<div style="font-family:Arial,Helvetica,sans-serif">ที่นั่ง </div>
-															<!--end:Description-->
-															<!--begin:Total-->
-															<div style="font-family:Arial,Helvetica,sans-serif"> ฿{{$details['seatDetails']}}</div>
-															<!--end:Total-->
-														</div>
-														<!--end:Item-->
-														<!--end:Item-->
-														<!--begin::Separator-->
-														<div class="separator separator-dashed" style="margin:15px 0"></div>
-														<!--end::Separator-->
-														<!--begin:Item-->
-														<div style="display:flex; justify-content: space-between; color:#7E8299; font-size: 14px; font-weight:500">
-															<!--begin:Description-->
-															<div style="font-family:Arial,Helvetica,sans-serif">ยอดที่ต้องชำระ</div>
-															<!--end:Description-->
-															<!--begin:Total-->
-															<div style="color:#50cd89; font-weight:700; font-family:Arial,Helvetica,sans-serif"> ฿{{$details['price']}}</div>
-															<!--end:Total-->
-														</div>
-														<!--end:Item-->
-													</div>
-													<!--end:Items-->
-												</div>
-												<!--end:Order-->
-												
-											</div>
-											<!--end:Email content-->
-										</td>
-									</tr>
+                                    
 									<tr style="display: flex; justify-content: center; margin:0 60px 35px 60px">
 										<td align="start" valign="start" style="padding-bottom: 10px;">
 											<p style="color:#181C32; font-size: 18px; font-weight: 600; margin-bottom:13px">ขั้นตอนการชำระเงิน</p>
@@ -205,30 +161,116 @@
 										</td>
 									</tr>
 									<tr>
+										<td align="center" valign="center" style="text-align:center; padding-bottom: 10px">
+											<h3 style="text-align:left; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">หมายเลขคำสั่งจอง : {{$details['order_id']}}</h3>
+											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
+												<tbody>
+												
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">{{$details['seatDetails']}} Tickets
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
+															
+																<a style="text-decoration:none;color:#ff5722" >ราคา {{$details['price']}}</a>
+															
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">Total
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%"> ราคา {{$details['price']}}
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2" height="20" style="font-size:1px;line-height:1px" width="100%">
+															&nbsp;
+														</td>
+													</tr>
+				
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
+										<td align="center" valign="center" style="text-align:center; padding-bottom: 10px">
+											<h3 style="text-align:left; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">รายละเอียดผู้สั่งจอง</h3>
+											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
+												<tbody>
+												
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" 
+														width="49%">ชื่อ-นามสกุล
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
+															
+																<a style="text-decoration:none;color:#ff5722" >{{$details['name']}}</a>
+															
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" 
+														width="49%">อีเมล
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
+															
+																<a style="text-decoration:none;color:#ff5722" >{{$details['email']}}</a>
+															
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" 
+														width="49%">เบอร์ติดต่อ
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
+															
+																<a style="text-decoration:none;color:#ff5722" >{{$details['phone']}}</a>
+															
+														</td>
+													</tr>
+													<tr>
+														<td style="text-align:left;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" 
+														width="49%">Line ID
+														</td>
+														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
+															
+																<a style="text-decoration:none;color:#ff5722" >{{$details['line_id']}}</a>
+															
+														</td>
+													</tr>
+													<tr>
+														<td colspan="2" height="20" style="font-size:1px;line-height:1px" width="100%">
+															&nbsp;
+														</td>
+													</tr>
+				
+												</tbody>
+											</table>
+										</td>
+									</tr>
+									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
+											<hr>
+											<img src="{{ url('img/154930.png') }}" style="width:100%; margin-bottom: 20px; margin-top: 20px;">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
+											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ <br> วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
 											<p style="margin-bottom:4px">Facebook Page
 											<a href="https://www.facebook.com/hobf.thailand2" rel="noopener" target="_blank" style="font-weight: 600">Second chance</a>.</p>
                                             <p style="margin-bottom:4px">Line@
-                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>.</p>
-											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
+                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>
+											</p>
+											
 										</td>
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 												<div style="margin-bottom: 10px">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+														<img alt="Logo" src="{{ url('img/Image 29.png') }}" style="height: 45px" />
 													</a>
 												</div>
 										</td>
 									</tr>
-									<tr>
-										<td align="center" valign="center" style="font-size: 13px; padding:0 15px; text-align:center; font-weight: 500; color: #A1A5B7;font-family:Arial,Helvetica,sans-serif">
-											<p>&copy; Copyright mawastudiothailand.
-											</p>
-										</td>
-									</tr>
+									
 								</tbody>
 							</table>
 						</div>

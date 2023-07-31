@@ -81,9 +81,10 @@
                                     <thead>
                                         <tr>
                                             <th class="p-0 ">ชื่อ-นามสกุล</th>
-                                            <th class="p-0 ">ราคา</th>
-                                            <th class="p-0 ">จำนวน</th>
-                                            <th class="p-0 ">status</th>
+                                            <th class="p-0 ">ยอดชำระ</th>
+                                            <th class="p-0 ">ที่นั่ง</th>
+                                            <th class="p-0 ">สถานะ</th>
+                                            <th class="p-0 ">วันที่</th>
                                             <th class="p-0 "></th>
                                         </tr>
                                     </thead>
@@ -101,19 +102,19 @@
                                             </td>
                                             
                                             <td>
-                                                {{ number_format($item->ticketCost,2) }}
+                                                {{ number_format($item->price,2) }}
                                             </td>
-                                            <td>{{ $item->total }}</td>
+                                            <td>{{ $item->my_seasts }}</td>
                                             <td>
-                                                <div class="form-check form-check-solid form-switch form-check-custom fv-row">
-                                                    <input class="form-check-input w-45px h-30px" type="checkbox" id="allowmarketing" name="status" 
-                                                    @if($item->e_status == 1)
-                                                    checked="checked"
-                                                    @endif
-                                                    value="1"/>
-                                                    <label class="form-check-label" for="allowmarketing"></label>
-                                                </div>
+                                                @if($item->remark == 'ชำระเงินสำเร็จ')
+                                                <b class="text-success">{{ $item->remark }}</b>
+                                                @endif
+                                                @if($item->remark == 'รอการตรวจสอบ')
+                                                <b class="text-warning">{{ $item->remark }}</b>
+                                                @endif
+                                                
                                             </td>
+                                            <td>{{ $item->created_at }}</td>
                                             <td class="text-end">
                                                 <div class="d-flex justify-content-end flex-shrink-0">
                                                     <a href="{{url('admin/order/'.$item->id.'/edit')}}" class="btn btn-icon btn-bg-light btn-active-color-primary btn-sm me-1">
