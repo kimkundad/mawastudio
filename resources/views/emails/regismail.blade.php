@@ -242,7 +242,6 @@
 															<hr>
 														</td>
 													</tr>
-				
 												</tbody>
 											</table>
 										</td>
