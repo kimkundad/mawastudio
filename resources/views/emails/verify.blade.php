@@ -35,30 +35,36 @@
 												<!--begin:Logo-->
 												<div style="margin:-10px 60px 20px 60px; text-align:center;">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 55px" />
 													</a>
 												</div>
 												<!--end:Logo-->
 												<!--begin:Text-->
 												<div style="font-size: 14px; text-align:center; font-weight: 500; margin:0 60px 36px 60px; font-family:Arial,Helvetica,sans-serif">
-													<p style="color:#181C32; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">พบกับคอนเสิร์ตการกุศล</p>
-													<p style="margin-bottom:2px; color:#3F4254; line-height:1.6">
-                                                    <b>เพลงนี้พี่ให้น้อง ครั้งที่ 3</b><br> รายได้ทั้งหมดนำไปช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย
+													<p style="color:#707070; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">สั่งจองตั๋วสำเร็จ</p>
+													<p style="margin-bottom:2px;font-weight:700; font-size: 20px;  color:#707070; line-height:1.6">
+                                                    <b>ขอขอบคุณ {{$details['name']}}
                                                     </p>
+													<p style="font-weight:700; font-size: 16px;  color:#707070;">
+													ที่ให้ความสนใจเข้าร่วมคอนเสิร์ตการกุศล เพื่อหารายได้ช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย
+													</p>
+												</div>
+												<div style="margin-bottom: 15px">
+													<img alt="Logo" src="{{ url('img/163714.png') }}" style="width: 100%;" />
 												</div>
 												<!--end:Text-->
 												<!--begin:Items-->
-												<div style="display: flex; justify-content:center; flex-wrap: wrap; margin:0 40px 42px 40px">
+												<div style="text-align:center; display: flex; justify-content:center; flex-wrap: wrap; margin:0 40px 42px 40px">
 
 													@if($details['seasts'])
 													@for ($i = 0; $i < count($details['seasts']); $i++)
 													<!--begin:Item-->
-													<div style="width:220px; margin:18px 20px">
+													<div style="width:220px; margin:18px 20px; text-align:center;">
 														<!--begin:Media-->
 														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i]), 'QrCode.png', 'image/png')!!}">
 														<!--end:Media-->
 														<!--begin:Text-->
-														<a href="#" style="color:#181C32; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
+														<a href="#" style="color:#707070; text-align:center; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
 														<!--begin:Text-->
 													</div>
 													<!--end:Item-->
@@ -69,11 +75,14 @@
 												</div>
 												<!--end:Items-->
 												<!--begin:Text-->
-												<div style="font-size:14px; text-align:left; font-weight:500; margin:0 60px 33px 60px; font-family:Arial,Helvetica,sans-serif">
-													<p style="color:#181C32; font-size: 18px; font-weight:600; margin-bottom:27px">สวัสดี {{$details['name']}},</p>
-													<p style="color:#3F4254; line-height:1.6">Lots of people make mistakes while
-													<a href="#" style="font-family:Arial,Helvetica,sans-serif margin-right:3px">creating paragraphs.</a>Some writers just put whitespace in their text in random places for aesthetic purposes but don’t think about the coherence and structure of the text. In many cases, the
-													<a href="#" style="font-family:Arial,Helvetica,sans-serif; margin-right:3px">coherence within paragraphs</a>and between paragraphs remains unclear. These kinds of mistakes can mess up the structure of your articles.</p>
+												<div style="font-size:14px; text-align:center; font-weight:500; margin:0 60px 33px 60px; font-family:Arial,Helvetica,sans-serif">
+													<hr>
+														<div style="text-align:center;">
+															<img alt="Logo" src="{{ url('img/map-02.jpg') }}" style="width: 100%;" />
+															<br>
+															<p>สถานที่จัดงาน <a target="_blank" htrf="https://goo.gl/maps/7egLm1p4bNn9r9DK7">https://goo.gl/maps/7egLm1p4bNn9r9DK7</a></p>
+														</div>
+													<hr>
 												</div>
 												<!--end:Text-->
 											</div>
@@ -82,27 +91,25 @@
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
+											
+											<img src="{{ url('img/154930.png') }}" style="width:90%; margin-bottom: 20px; margin-top: 20px;">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
+											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ <br> วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
 											<p style="margin-bottom:4px">Facebook Page
 											<a href="https://www.facebook.com/hobf.thailand2" rel="noopener" target="_blank" style="font-weight: 600">Second chance</a>.</p>
                                             <p style="margin-bottom:4px">Line@
-                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>.</p>
-											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
+                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>
+											</p>
+											
 										</td>
 									</tr>
 									<tr>
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 												<div style="margin-bottom: 10px">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/Logo_new_v1.png') }}" style="height: 45px" />
+														<img alt="line" src="{{ url('img/Image_29.png') }}" style="height: 160px; width:160px" />
 													</a>
 												</div>
-										</td>
-									</tr>
-									<tr>
-										<td align="center" valign="center" style="font-size: 13px; padding:0 15px; text-align:center; font-weight: 500; color: #A1A5B7;font-family:Arial,Helvetica,sans-serif">
-											<p>&copy; Copyright mawastudiothailand.
-											</p>
 										</td>
 									</tr>
 								</tbody>
