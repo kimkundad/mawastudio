@@ -41,9 +41,9 @@
 												<!--end:Logo-->
 												<!--begin:Text-->
 												<div style="font-size: 14px; text-align:center; font-weight: 500; margin:0 60px 36px 60px; font-family:Arial,Helvetica,sans-serif">
-													<p style="color:#181C32; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">มูลนิธิบ้านพระพร</p>
+													<p style="color:#181C32; font-size: 28px; font-weight:700; line-height:1.4; margin-bottom:6px">พบกับคอนเสิร์ตการกุศล</p>
 													<p style="margin-bottom:2px; color:#3F4254; line-height:1.6">
-                                                    <b>คอนเสิร์ตการกุศล</b><br> เพื่อหารายได้ช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย
+                                                    <b>เพลงนี้พี่ให้น้อง ครั้งที่ 3</b><br> รายได้ทั้งหมดนำไปช่วยเหลือมูลนิธิบ้านพระพรโดยไม่หักค่าใช้จ่าย
                                                     </p>
 												</div>
 												<!--end:Text-->
@@ -83,12 +83,11 @@
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
-											<p style="margin-bottom:2px">โทรติดต่อหมายเลขฝ่ายดูแลลูกค้าของเรา: <a href="#" style="font-weight: 600">062-5932224</a></p>
-											<p style="margin-bottom:4px">E-mail
-											<a href="#" rel="noopener" target="_blank" style="font-weight: 600">pop@eventpop.me</a>.</p>
+											<p style="margin-bottom:4px">Facebook Page
+											<a href="https://www.facebook.com/hobf.thailand2" rel="noopener" target="_blank" style="font-weight: 600">Second chance</a>.</p>
                                             <p style="margin-bottom:4px">Line@
-                                                <a href="#" rel="noopener" target="_blank" style="font-weight: 600">@eventpop</a>.</p>
-											<p>ทุกวันจันทร์-ศุกร์ 10:00 - 18:00 น. (ยกเว้นวันเสาร์-อาทิตย์และวันหยุดนักขัตฤกษ์)</p>
+                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>.</p>
+											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
 										</td>
 									</tr>
 									<tr>

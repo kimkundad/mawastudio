@@ -55,14 +55,12 @@
 												</div>
 
                                                 <div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/S__51208212.jpg') }}" style="max-height: 400px; width: auto" />
+													<img alt="Logo" src="{{ url('img/Mask Group 14.png') }}" style="max-height: 400px; width: auto" />
 												</div>
-												<div className='d-flex justify-content-center flex-column'>
-													<p className='p-acc'>Account Name: HOUSE OF BLESSING FOUNDATION</p>
-													<p className='p-acc'>Account No.: 2542170358</p>
-													<p className='p-acc'>TMB Thanachart Bank Public Company Limited</p>
-													<p className='p-acc'>Branch: SI WARA TOWN IN TOWN BRANCH</p>
+												<div style="margin-bottom: 15px">
+													<img alt="Logo" src="{{ url('img/Group 93.png') }}" style="max-height: 400px; width: auto" />
 												</div>
+												
 												<!--end:Text-->
 												<!--begin:Action-->
 												<a href='https://mawastudiothailand.com/plengneepeehainong/paymentNoti?ordercon={{$details['order_id']}}' target="_blank" 
@@ -165,7 +163,7 @@
 															<!--end::Title-->
 															<!--begin::Desc-->
 															<p style="color:#5E6278; font-size: 13px; font-weight: 500; padding-top:3px; margin:0;font-family:Arial,Helvetica,sans-serif">
-                                                                เพิ่มเพื่อนผ่านไลน์  <a class='text-success'>@eventpop</a> จากนั้นแจ้ง หมายเลขคำสั่งจอง และ แนบสลิปชำระเงิน รอเจ้าหน้าที่ตรวจสอบ
+                                                                เพิ่มเพื่อนผ่านไลน์  <a href="https://lin.ee/dMesavY" class='text-success'>https://lin.ee/dMesavY</a> จากนั้นแจ้ง หมายเลขคำสั่งจอง และ แนบสลิปชำระเงิน รอเจ้าหน้าที่ตรวจสอบ
                                                             </p>
 															<!--end::Desc-->
 														</div>
@@ -209,12 +207,11 @@
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
-											<p style="margin-bottom:2px">โทรติดต่อหมายเลขฝ่ายดูแลลูกค้าของเรา: <a href="#" style="font-weight: 600">062-5932224</a></p>
-											<p style="margin-bottom:4px">E-mail
-											<a href="#" rel="noopener" target="_blank" style="font-weight: 600">pop@eventpop.me</a>.</p>
+											<p style="margin-bottom:4px">Facebook Page
+											<a href="https://www.facebook.com/hobf.thailand2" rel="noopener" target="_blank" style="font-weight: 600">Second chance</a>.</p>
                                             <p style="margin-bottom:4px">Line@
-                                                <a href="#" rel="noopener" target="_blank" style="font-weight: 600">@eventpop</a>.</p>
-											<p>ทุกวันจันทร์-ศุกร์ 10:00 - 18:00 น. (ยกเว้นวันเสาร์-อาทิตย์และวันหยุดนักขัตฤกษ์)</p>
+                                                <a href="https://lin.ee/dMesavY" rel="noopener" target="_blank" style="font-weight: 600">https://lin.ee/dMesavY</a>.</p>
+											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
 										</td>
 									</tr>
 									<tr>
