@@ -49,7 +49,7 @@
                         <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-7 my-0 pt-1">
                             <!--begin::Item-->
                             <li class="breadcrumb-item text-muted">
-                                <a href="{{ url('dashboard') }}" class="text-muted text-hover-primary">Dashboard</a>
+                                <a href="{{ url('dashboard') }}" class="text-muted text-hover-primary"></a>
                             </li>
                             <!--end::Item-->
                             <!--begin::Item-->
@@ -58,7 +58,9 @@
                             </li>
                             <!--end::Item-->
                             <!--begin::Item-->
-                            <li class="breadcrumb-item text-muted">ดูสถิติต่างๆ</li>
+                            <li class="breadcrumb-item text-muted">
+                                
+                            </li>
                             <!--end::Item-->
                         </ul>
                         <!--end::Breadcrumb-->
@@ -66,7 +68,7 @@
                     <!--end::Page title-->
                     <!--begin::Actions-->
                     <div class="d-flex align-items-center gap-2 gap-lg-3">
-
+                        
                     </div>
                     <!--end::Actions-->
                 </div>
@@ -80,6 +82,37 @@
                     
                   <div class="row g-5 g-xl-10 mb-xl-10">
                     <div class="col-md-12">
+
+                        <div class="d-flex flex-nowrap">
+                            <div style="margin-right:10px">
+                                <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
+                                        <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>
+                                        <rect x="7" y="6" width="4" height="4" rx="2" fill="currentColor"></rect>
+                                    </svg>
+                                </span> รอชำระเงิน และ รอการตรวจสอบ
+                            </div>
+                            <div style="margin-right:10px">
+                                <span class="svg-icon svg-icon-3 svg-icon-success ">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
+                                        <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>
+                                        <rect x="7" y="6" width="4" height="4" rx="2" fill="currentColor"></rect>
+                                    </svg>
+                                </span> ชำระเงินสำเร็จ
+                            </div>
+                            <div style="margin-right:10px">
+                                <span class="svg-icon svg-icon-3 svg-icon-primary ">
+                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
+                                        <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>
+                                        <rect x="7" y="6" width="4" height="4" rx="2" fill="currentColor"></rect>
+                                    </svg>
+                                </span> เข้าร่วมงานแล้ว
+                            </div>
+                        </div>
+                        <br>
                             <div class="card h-md-100" style="width:858px">
 
                                 
@@ -108,8 +141,11 @@
                                                             @if($objA[$i]['status_order'] == 0)
                                                             <span class="svg-icon svg-icon-3 svg-icon-muted ">
                                                             @endif
-                                                            @if($objA[$i]['status_order'] == 2)
+                                                            @if($objA[$i]['status_order'] == 2 && $objA[$i]['status_checkin'] == 0)
                                                             <span class="svg-icon svg-icon-3 svg-icon-success ">
+                                                            @endif
+                                                            @if($objA[$i]['status_order'] == 2 && $objA[$i]['status_checkin'] == 1)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-primary ">
                                                             @endif
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
@@ -143,7 +179,18 @@
 
                                                     <div class="d-flex justify-content-start text-center flex-column m-1">
                                                         <a href="{{ url('admin/edit_seasts/'.$objB[$i]['id']) }}" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">
+                                                            @if($objB[$i]['status_order'] == 1)
                                                             <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objB[$i]['status_order'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objB[$i]['status_order'] == 2 && $objB[$i]['status_checkin'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-success ">
+                                                            @endif
+                                                            @if($objB[$i]['status_order'] == 2 && $objB[$i]['status_checkin'] == 1)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-primary ">
+                                                            @endif
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
                                                                     <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>
@@ -176,7 +223,18 @@
 
                                                     <div class="d-flex justify-content-start text-center flex-column m-1">
                                                         <a href="{{ url('admin/edit_seasts/'.$objC[$i]['id']) }}" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">
+                                                            @if($objC[$i]['status_order'] == 1)
                                                             <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objC[$i]['status_order'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objC[$i]['status_order'] == 2 && $objC[$i]['status_checkin'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-success ">
+                                                            @endif
+                                                            @if($objC[$i]['status_order'] == 2 && $objC[$i]['status_checkin'] == 1)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-primary ">
+                                                            @endif
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
                                                                     <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>
@@ -209,7 +267,18 @@
 
                                                     <div class="d-flex justify-content-start text-center flex-column m-1">
                                                         <a href="{{ url('admin/edit_seasts/'.$objD[$i]['id']) }}" class="text-gray-800 fw-bold text-hover-primary mb-1 fs-6">
+                                                            @if($objD[$i]['status_order'] == 1)
                                                             <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objD[$i]['status_order'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-muted ">
+                                                            @endif
+                                                            @if($objD[$i]['status_order'] == 2 && $objD[$i]['status_checkin'] == 0)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-success ">
+                                                            @endif
+                                                            @if($objD[$i]['status_order'] == 2 && $objD[$i]['status_checkin'] == 1)
+                                                            <span class="svg-icon svg-icon-3 svg-icon-primary ">
+                                                            @endif
                                                                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                                     <path opacity="0.3" d="M16.5 9C16.5 13.125 13.125 16.5 9 16.5C4.875 16.5 1.5 13.125 1.5 9C1.5 4.875 4.875 1.5 9 1.5C13.125 1.5 16.5 4.875 16.5 9Z" fill="currentColor"></path>
                                                                     <path d="M9 16.5C10.95 16.5 12.75 15.75 14.025 14.55C13.425 12.675 11.4 11.25 9 11.25C6.6 11.25 4.57499 12.675 3.97499 14.55C5.24999 15.75 7.05 16.5 9 16.5Z" fill="currentColor"></path>

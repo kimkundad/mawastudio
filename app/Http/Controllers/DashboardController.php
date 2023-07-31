@@ -233,8 +233,17 @@ class DashboardController extends Controller
               'status_order' => $request['status']
             ]
           );
-
         }
+
+        if($request['status'] == 0){
+          $remark = 'รอชำระเงิน';
+          }
+        if($request['status'] == 2){
+          $remark = 'ชำระเงินสำเร็จ';
+          }
+        if($request['status'] == 1){
+              $remark = 'รอการตรวจสอบ';
+          }
 
            $objs = order::find($id);
            $objs->email = $request['email'];
@@ -242,9 +251,12 @@ class DashboardController extends Controller
            $objs->phone = $request['phone'];
            $objs->line = $request['line'];
            $objs->status = $request['status'];
+           $objs->remark = $remark;
            $objs->save();
 
            if($request['email_status'] == 1){
+
+            if($request['status'] == 2){
 
             $details = [
                 'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
@@ -254,6 +266,7 @@ class DashboardController extends Controller
                 ];
         
               \Mail::to($request['email'])->send(new \App\Mail\SuccessEmail($details));
+            }
 
            }
 

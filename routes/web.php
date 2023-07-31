@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MyUserController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\DonateController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,7 +27,6 @@ Route::get('/email', [App\Http\Controllers\HomeController::class, 'email'])->nam
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::group(['middleware' => ['UserRole:superadmin|admin']], function() {
-
 	
 	Route::post('api/api_post_status_user', [App\Http\Controllers\DashboardController::class, 'api_post_status_user']);
 
@@ -50,6 +51,10 @@ Route::group(['middleware' => ['UserRole:superadmin|admin']], function() {
 	Route::resource('/admin/order', OrderController::class);
     Route::post('/api/api_post_status_order', [App\Http\Controllers\OrderController::class, 'api_post_status_order']);
     Route::get('api/del_order/{id}', [App\Http\Controllers\OrderController::class, 'del_order']);
+
+	Route::resource('/admin/donate', DonateController::class);
+    Route::post('/api/api_post_status_donate', [App\Http\Controllers\DonateController::class, 'api_post_status_donate']);
+    Route::get('api/del_donate/{id}', [App\Http\Controllers\DonateController::class, 'del_donate']);
 
 });
 

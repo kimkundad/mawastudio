@@ -474,9 +474,6 @@ class HomeController extends Controller
         return response()->json([ 'data_order' => null], 204);
 
       }
-
-      
-
     }
 
     public function useCheckSeasts(Request $request, $id){
