@@ -50,7 +50,7 @@
 												</div>
 
 												<div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/160428.png') }}" style="max-height: 400px; width: auto" />
+													<img alt="Logo" src="{{ url('img/160428.png') }}" style="width: 100%;" />
 												</div>
 
                                                 <div style="margin-bottom: 15px">
@@ -115,7 +115,7 @@
 														<!--begin::Content-->
 														<div>
 															<!--begin::Title-->
-															<a href="#" style="color:#181C32; font-size: 14px; font-weight: 600;font-family:Arial,Helvetica,sans-serif">การแจ้งชำระเงินผ่าน Line</a>
+															<a href="#" style="color:#181C32; font-size: 14px; font-weight: 600;font-family:Arial,Helvetica,sans-serif">หรือ การแจ้งชำระเงินผ่าน Line</a>
 															<!--end::Title-->
 															<!--begin::Desc-->
 															<p style="color:#5E6278; font-size: 13px; font-weight: 500; padding-top:3px; margin:0;font-family:Arial,Helvetica,sans-serif">
@@ -161,7 +161,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td align="center" valign="center" style="text-align:center; padding-bottom: 10px">
+										<td align="center" valign="center" style="text-align:center; padding: 10px">
 											<h3 style="text-align:left; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">หมายเลขคำสั่งจอง : {{$details['order_id']}}</h3>
 											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
@@ -171,7 +171,7 @@
 														</td>
 														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
 															
-																<a style="text-decoration:none;color:#ff5722" >ราคา {{$details['price']}}</a>
+																<a style="text-decoration:none;color:#7E8299" >ราคา {{$details['price']}}</a>
 															
 														</td>
 													</tr>
@@ -192,7 +192,7 @@
 										</td>
 									</tr>
 									<tr>
-										<td align="center" valign="center" style="text-align:center; padding-bottom: 10px">
+										<td align="center" valign="center" style="text-align:center; padding: 10px">
 											<h3 style="text-align:left; color:#181C32; font-size: 18px; font-weight:600; margin-bottom: 22px">รายละเอียดผู้สั่งจอง</h3>
 											<table width="560" align="center" cellpadding="0" cellspacing="0" border="0">
 												<tbody>
@@ -203,7 +203,7 @@
 														</td>
 														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
 															
-																<a style="text-decoration:none;color:#ff5722" >{{$details['name']}}</a>
+																<a style="text-decoration:none;color:#7E8299" >{{$details['name']}}</a>
 															
 														</td>
 													</tr>
@@ -213,7 +213,7 @@
 														</td>
 														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
 															
-																<a style="text-decoration:none;color:#ff5722" >{{$details['email']}}</a>
+																<a style="text-decoration:none;color:#7E8299" >{{$details['email']}}</a>
 															
 														</td>
 													</tr>
@@ -223,7 +223,7 @@
 														</td>
 														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
 															
-																<a style="text-decoration:none;color:#ff5722" >{{$details['phone']}}</a>
+																<a style="text-decoration:none;color:#7E8299" >{{$details['phone']}}</a>
 															
 														</td>
 													</tr>
@@ -233,7 +233,7 @@
 														</td>
 														<td style="text-align:right;font-family:Helvetica,arial,sans-serif;font-size:13px;color:#000000;vertical-align:top;word-break:break-word" width="49%">
 															
-																<a style="text-decoration:none;color:#ff5722" >{{$details['line_id']}}</a>
+																<a style="text-decoration:none;color:#7E8299" >{{$details['line_id']}}</a>
 															
 														</td>
 													</tr>
@@ -250,7 +250,7 @@
 									<tr>
 										<td align="center" valign="center" style="font-size: 13px; text-align:center; padding: 0 10px 10px 10px; font-weight: 500; color: #A1A5B7; font-family:Arial,Helvetica,sans-serif">
 											<hr>
-											<img src="{{ url('img/154930.png') }}" style="width:100%; margin-bottom: 20px; margin-top: 20px;">
+											<img src="{{ url('img/154930.png') }}" style="width:90%; margin-bottom: 20px; margin-top: 20px;">
 											<p style="color:#181C32; font-size: 16px; font-weight: 600; margin-bottom:9px">Customer Support</p>
 											<p>หากมีข้อสงสัยเพิ่มเติมหรือต้องการความช่วยเหลือ ติดต่อ <br> วันจันทร์-อาทิตย์ หยุดวันเสาร์ 10:00 – 18:00 น.</p>
 											<p style="margin-bottom:4px">Facebook Page
@@ -265,7 +265,7 @@
 										<td align="center" valign="center" style="text-align:center; padding-bottom: 20px;">
 												<div style="margin-bottom: 10px">
 													<a href="#" rel="noopener" target="_blank">
-														<img alt="Logo" src="{{ url('img/Image 29.png') }}" style="height: 45px" />
+														<img alt="line" src="{{ url('img/Image_29.png') }}" style="height: 160px; width:160px" />
 													</a>
 												</div>
 										</td>
