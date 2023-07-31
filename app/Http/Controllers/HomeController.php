@@ -341,13 +341,6 @@ class HomeController extends Controller
           $randomString .= $characters[random_int(0, $charactersLength - 1)];
       }
 
-      seast::create([
-        'event_id' => 1,
-        'group_id' => 4,
-        'seats_name' => 'D'.$i,
-        'user_id' => 0,
-        'status' => 0
-    ]);
 
     if($check > 1){
 

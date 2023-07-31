@@ -23,7 +23,7 @@ class DashboardController extends Controller
         $data['objC'] = $objC;
         $objD = seast::where('group_id', 4)->get();
         $data['objD'] = $objD;
-        dd($objD);
+   
         return view('admin.dashboard.index', $data);
     }
 
