@@ -98,7 +98,8 @@
                                                     <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{ $item->user_name }}</a>
                                                 </td>
                                                 <td>
-                                                    {{ number_format($item->money,2) }}
+                                                    {{-- {{ number_format($item->money,2) }} --}}
+                                                    {{$item->money}}
                                                 </td>
                                                 <td>
                                                     {{ $item->email }}
