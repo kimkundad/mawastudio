@@ -68,7 +68,7 @@
                     <div class="card card-xl-stretch mb-5 mb-xl-8">
                         <div class="card-header border-0 pt-5">
                             <h3 class="card-title align-items-start flex-column">
-                                {{-- <span class="card-label fw-bold fs-3 mb-1">ยอดบริจาคทั้งหมด + {{ number_format($sum,2) }} บาท</span> --}}
+                                <span class="card-label fw-bold fs-3 mb-1">ยอดบริจาคทั้งหมด + {{ number_format($sum,2) }} บาท</span>
                                 <span class="text-muted mt-1 fw-semibold fs-7"> จำนวนยอดบริจาค {{ $count }} ยอด</span>
                             </h3>
                         </div>
@@ -98,8 +98,7 @@
                                                     <a href="#" class="text-dark fw-bold text-hover-primary mb-1 fs-6">{{ $item->user_name }}</a>
                                                 </td>
                                                 <td>
-                                                    {{-- {{ number_format($item->money,2) }} --}}
-                                                    {{$item->money}}
+                                                    {{ number_format($item->money,2) }}
                                                 </td>
                                                 <td>
                                                     {{ $item->email }}
