@@ -134,6 +134,7 @@
                                                     <div class="col-lg-8 fv-row fv-plugins-icon-container">
                                                         <input type="text" class="form-control form-control-lg form-control-solid" value="{{ $order->order_id }}" readonly>
                                                         <input type="hidden" name="seasts_id" value="{{ $objs->id }}" readonly>
+                                                        <input type="hidden" name="one_seasts" value="{{ $objs->id }}">
                                                     </div>
                                                     <!--end::Col-->
                                                 </div>
@@ -343,7 +344,7 @@
                                                     <!--begin::Col-->
                                                     <div class="col-lg-8 fv-row fv-plugins-icon-container">
                                                         <input type="text" name="username" class="form-control form-control-lg form-control-solid" value="{{old('username') ? old('username') : ''}}">
-                                                    
+                                                        <input type="hidden" name="one_seasts" value="{{ $objs->id }}">
                                                         @if ($errors->has('username'))
                                                             <div class="fv-plugins-message-container invalid-feedback">
                                                                 <div>กรุณากรอก ชื่อ-นามสกุล</div>

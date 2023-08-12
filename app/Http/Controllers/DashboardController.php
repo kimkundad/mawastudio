@@ -149,12 +149,19 @@ class DashboardController extends Controller
             [
               'status' => 1,
               'status_order' => $request['status'],
-              'user_id' => $the_id,
-              'status_checkin' => $request['status_checkin']
+              'user_id' => $the_id
             ]
           );
 
         }
+
+        DB::table('seasts')
+          ->where('id', $request['one_seasts'])
+          ->update(
+            [
+              'status_checkin' => $request['status_checkin']
+            ]
+          );
 
 
         $message = "เจ้าหน้าที่ทำการเพิ่มผู้งทะเบียนใหม่ #: ". $randomString ." ชื่อผู้ : ".$request['username'].", ".$request['email'].", ".$request['phone'].", ที่นั่ง :".$request['my_seasts'];
@@ -237,11 +244,19 @@ class DashboardController extends Controller
           ->where('seats_name', $pieces[$i])
           ->update(
             [
-              'status_order' => $request['status'],
-              'status_checkin' => $request['status_checkin']
+              'status_order' => $request['status']
             ]
           );
         }
+
+
+        DB::table('seasts')
+          ->where('id', $request['one_seasts'])
+          ->update(
+            [
+              'status_checkin' => $request['status_checkin']
+            ]
+          );
 
         if($request['status'] == 0){
           $remark = 'รอชำระเงิน';
