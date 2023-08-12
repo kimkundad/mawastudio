@@ -194,14 +194,18 @@ class DashboardController extends Controller
         
         if($mystatus == 2){
 
+          for($j = 0; $j < count($pieces); $j++){
+
             $details = [
                 'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
                 'name' => $request['username'],
-                'seasts' => $pieces,
+                'seasts' => $pieces[$j],
                 'order_id' => $randomString,
                 ];
         
               \Mail::to($request['email'])->send(new \App\Mail\SuccessEmail($details));
+
+          }
 
         }
 
@@ -260,15 +264,19 @@ class DashboardController extends Controller
 
             if($request['status'] == 2){
 
+              for($j = 0; $j < count($pieces); $j++){
+
             $details = [
                 'title' => 'คุณทำการลงทะเบียนผ่านเว็บ khunsukto.com สำเร็จแล้ว',
                 'name' => $request['username'],
-                'seasts' => $pieces,
+                'seasts' => $pieces[$j],
                 'order_id' => $order->order_id,
                 ];
         
               \Mail::to($request['email'])->send(new \App\Mail\SuccessEmail($details));
             }
+
+          }
 
            }
 
