@@ -149,7 +149,8 @@ class DashboardController extends Controller
             [
               'status' => 1,
               'status_order' => $request['status'],
-              'user_id' => $the_id
+              'user_id' => $the_id,
+              'status_checkin' => $request['status_checkin']
             ]
           );
 
@@ -236,7 +237,8 @@ class DashboardController extends Controller
           ->where('seats_name', $pieces[$i])
           ->update(
             [
-              'status_order' => $request['status']
+              'status_order' => $request['status'],
+              'status_checkin' => $request['status_checkin']
             ]
           );
         }

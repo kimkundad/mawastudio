@@ -221,6 +221,26 @@
                                                     <!--end::Col-->
                                                 </div>
 
+
+                                                <div class="row mb-6">
+                                                    <!--begin::Label-->
+                                                    <label class="col-lg-4 col-form-label fw-semibold fs-6">สถานะการเข้างาน</label>
+                                                    <!--end::Label-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                        <select class="form-select" aria-label="Select example" name="status_checkin">
+                                                            <option value="0" @if( $objs->status_checkin == 0)
+                                                                selected='selected'
+                                                                @endif>รอการชำระเงิน</option>
+                                                            <option value="1" @if( $objs->status_checkin == 1)
+                                                                selected='selected'
+                                                                @endif>รอการตรวจสอบ</option>
+                                                            
+                                                        </select>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
                                                 <div class="row mb-6">
                                                     <!--begin::Label-->
                                                     <label class="col-lg-4 col-form-label required fw-semibold fs-6">ที่นั่ง</label>
@@ -372,6 +392,25 @@
                                                             <option value="0" >รอการชำระเงิน</option>
                                                             <option value="1" >รอการตรวจสอบ</option>
                                                             <option value="2" >ชำระเงินสำเร็จ</option>
+                                                        </select>
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
+
+                                                <div class="row mb-6">
+                                                    <!--begin::Label-->
+                                                    <label class="col-lg-4 col-form-label fw-semibold fs-6">สถานะการเข้างาน</label>
+                                                    <!--end::Label-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                        <select class="form-select" aria-label="Select example" name="status_checkin">
+                                                            <option value="0" @if( $objs->status_checkin == 0)
+                                                                selected='selected'
+                                                                @endif>รอการชำระเงิน</option>
+                                                            <option value="1" @if( $objs->status_checkin == 1)
+                                                                selected='selected'
+                                                                @endif>รอการตรวจสอบ</option>
+                                                            
                                                         </select>
                                                     </div>
                                                     <!--end::Col-->
