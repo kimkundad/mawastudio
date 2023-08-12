@@ -231,10 +231,10 @@
                                                         <select class="form-select" aria-label="Select example" name="status_checkin">
                                                             <option value="0" @if( $objs->status_checkin == 0)
                                                                 selected='selected'
-                                                                @endif>รอการชำระเงิน</option>
+                                                                @endif>ยังไม่มาเข้าร่วมงาน</option>
                                                             <option value="1" @if( $objs->status_checkin == 1)
                                                                 selected='selected'
-                                                                @endif>รอการตรวจสอบ</option>
+                                                                @endif>ได้เข้าร่วมงานแล้ว</option>
                                                             
                                                         </select>
                                                     </div>
@@ -406,10 +406,10 @@
                                                         <select class="form-select" aria-label="Select example" name="status_checkin">
                                                             <option value="0" @if( $objs->status_checkin == 0)
                                                                 selected='selected'
-                                                                @endif>รอการชำระเงิน</option>
+                                                                @endif>ยังไม่มาเข้าร่วมงาน</option>
                                                             <option value="1" @if( $objs->status_checkin == 1)
                                                                 selected='selected'
-                                                                @endif>รอการตรวจสอบ</option>
+                                                                @endif>ได้เข้าร่วมงานแล้ว</option>
                                                             
                                                         </select>
                                                     </div>
