@@ -131,7 +131,7 @@
                                                     <!--end::Label-->
                                                     <!--begin::Col-->
                                                     <div class="col-lg-8 fv-row fv-plugins-icon-container">
-                                                    <!-- <img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$order->order_id.'&seasts='.$objs->seats_name), 'QrCode.png', 'image/png')!!}"> -->
+                                         
                                                         {!! QrCode::size(300)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$order->order_id.'&seasts='.$objs->seats_name) !!}
                                                     </div>
                                                     <!--end::Col-->
