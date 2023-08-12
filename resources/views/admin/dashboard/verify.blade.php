@@ -146,23 +146,22 @@
 												<!--end:Order-->
 												<!--begin:Action-->
                                                 @if($myseasts > 0)
-                                                @if($order->status == 2)
+                                                	@if($order->status == 2)
 
-                                                @if($count > 0)
-												<div id="checkin_div">
-                                                    <a id="checkin" style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500;">
-                                                        ลงทะเบียนเข้างาน
-                                                    </a>
-                                                </div>
-                                                @else
-                                                <div style="margin-bottom: 15px">
-													<img alt="Logo" src="{{ url('img/icon-positive-vote-2.svg') }}">
-												</div>
-                                                <p style="margin-bottom:9px; color:#181C32; font-size: 18px; font-weight:700">ลงทะเบียนเข้างานเรียบร้อยแล้ว!</p>
-                                                @endif
+															@if($count > 0)
+															<div id="checkin_div">
+																<a id="checkin" style="background-color:#50cd89; border-radius:6px;display:inline-block; padding:11px 19px; color: #FFFFFF; font-size: 14px; font-weight:500;">
+																	ลงทะเบียนเข้างาน
+																</a>
+															</div>
+															@else
+															<div style="margin-bottom: 15px">
+																<img alt="Logo" src="{{ url('img/icon-positive-vote-2.svg') }}">
+															</div>
+															<p style="margin-bottom:9px; color:#181C32; font-size: 18px; font-weight:700">ลงทะเบียนเข้างานเรียบร้อยแล้ว!</p>
+															@endif
 
-
-                                                @endif
+                                                	@endif
                                                 @else
                                                  เกิดข้อผิดพลาดบางอย่าง เราไม่สามารถหาที่นั่งของคุณได้
                                                 @endif
