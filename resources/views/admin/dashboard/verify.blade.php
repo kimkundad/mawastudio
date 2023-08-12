@@ -145,7 +145,7 @@
 												</div>
 												<!--end:Order-->
 												<!--begin:Action-->
-                                                @if($myseasts > 0)
+												
                                                 	@if($order->status == 2)
 
 															@if($count > 0)
@@ -162,9 +162,7 @@
 															@endif
 
                                                 	@endif
-                                                @else
-                                                 เกิดข้อผิดพลาดบางอย่าง เราไม่สามารถหาที่นั่งของคุณได้
-                                                @endif
+                                                
 												<!--begin:Action-->
 											</div>
 											<!--end:Email content-->

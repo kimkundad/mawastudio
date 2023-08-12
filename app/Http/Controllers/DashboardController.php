@@ -89,7 +89,6 @@ class DashboardController extends Controller
         $data['seasts'] = $request['seasts'];
         $myseasts = order::whereIn('my_seasts', [$request['seasts']])->count();
         $data['myseasts'] = $myseasts;
-        dd($myseasts);
 
         $count = seast::where('seats_name', $request['seasts'])->where('status_checkin', 0)->count();
         $data['count'] = $count;
