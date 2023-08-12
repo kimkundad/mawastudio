@@ -124,7 +124,17 @@
                                                 </h3>
                                             </div>
                                             <div class="card-body border-top p-9">
-                                             
+
+                                            <div class="row mb-6">
+                                                    <!--begin::Label-->
+                                                    <label class="col-lg-4 col-form-label required fw-semibold fs-6">QR CODE</label>
+                                                    <!--end::Label-->
+                                                    <!--begin::Col-->
+                                                    <div class="col-lg-8 fv-row fv-plugins-icon-container">
+                                                    <img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$order->order_id.'&seasts='.$objs->seats_name), 'QrCode.png', 'image/png')!!}">
+                                                    </div>
+                                                    <!--end::Col-->
+                                                </div>
 
                                                 <div class="row mb-6">
                                                     <!--begin::Label-->
