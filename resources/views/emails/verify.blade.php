@@ -57,18 +57,16 @@
 												<div style="text-align:center; justify-content:center; flex-wrap: wrap; margin:0 40px 42px 40px">
 
 													@if($details['seasts'])
-													@for ($i = 0; $i < count($details['seasts']); $i++)
 													<!--begin:Item-->
 													<div style=" margin:18px 20px; text-align:center;">
 														<!--begin:Media-->
-														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts'][$i]), 'QrCode.png', 'image/png')!!}">
+														<img src="{!!$message->embedData(QrCode::format('png')->size(220)->generate('https://admin.mawastudiothailand.com/admin/verify_checkin?orderid='.$details['order_id'].'&seasts='.$details['seasts']), 'QrCode.png', 'image/png')!!}">
 														<!--end:Media-->
 														<!--begin:Text-->
-														<a href="#" style="color:#707070; text-align:center; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts'][$i]}}</a>
+														<a href="#" style="color:#707070; text-align:center; font-size: 14px; font-weight:600; display:block; margin-bottom:9px">ที่นั่ง {{$details['seasts']}}</a>
 														<!--begin:Text-->
 													</div>
 													<!--end:Item-->
-													@endfor
 													@endif
 													
 													
